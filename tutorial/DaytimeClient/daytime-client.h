@@ -1,0 +1,1 @@
+﻿int run_daytime_client(int argc, char* argv[]);

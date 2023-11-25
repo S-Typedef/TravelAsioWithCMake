@@ -1,0 +1,1 @@
+﻿int run_daytime_server();
