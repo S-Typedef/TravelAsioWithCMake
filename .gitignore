@@ -1,3 +1,5 @@
 *
 !tutorial/
+!tutorial/**
+# !tutorial/SyncDaytime
 tutorial/**/build/
