@@ -4,7 +4,7 @@
 
 using boost::asio::ip::tcp;
 
-int run_sync_daytime_client(int argc, char* argv[])
+int run_async_daytime_client(int argc, char* argv[])
 {
 	try
 	{

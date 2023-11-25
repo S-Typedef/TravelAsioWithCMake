@@ -1,0 +1,2 @@
+﻿add_subdirectory(DaytimeClient)
+add_subdirectory(DaytimeServer)

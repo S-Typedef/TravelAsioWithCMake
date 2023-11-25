@@ -12,7 +12,7 @@ std::string make_daytime_string()
   return ctime(&now);
 }
 
-int run_daytime_server()
+int run_sync_daytime_server()
 {
   try
   {

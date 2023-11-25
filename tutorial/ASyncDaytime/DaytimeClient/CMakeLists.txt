@@ -1,6 +1,7 @@
 ﻿cmake_minimum_required(VERSION 3.15)
 
-project(SyncDaytimeClient VERSION 1.0)
+# just use ASyncDaytimeServer
+project(ASyncDaytimeClient VERSION 1.0)
 
 set(BOOST_ROOT /usr/local/boost)
 set(Boost_NO_SYSTEM_PATHS ON)

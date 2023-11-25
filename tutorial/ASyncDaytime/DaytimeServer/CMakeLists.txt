@@ -1,6 +1,6 @@
 ﻿cmake_minimum_required(VERSION 3.15)
 
-project(SyncDaytimeClient VERSION 1.0)
+project(ASyncDaytimeServer VERSION 1.0)
 
 set(BOOST_ROOT /usr/local/boost)
 set(Boost_NO_SYSTEM_PATHS ON)
@@ -14,7 +14,7 @@ if (Boost_FOUND)
 
 endif()
 
-set(SRC_LIST daytime-client.cc)
+set(SRC_LIST daytime-server.cc)
 
 add_library(${PROJECT_NAME} ${SRC_LIST})
 

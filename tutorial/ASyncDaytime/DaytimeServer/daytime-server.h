@@ -1,0 +1,1 @@
+﻿int run_async_daytime_server();

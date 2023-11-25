@@ -1,0 +1,1 @@
+﻿int run_async_daytime_client(int argc, char* argv[]);

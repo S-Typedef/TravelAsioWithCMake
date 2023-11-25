@@ -1,1 +1,1 @@
-﻿int run_daytime_server();
+﻿int run_sync_daytime_server();

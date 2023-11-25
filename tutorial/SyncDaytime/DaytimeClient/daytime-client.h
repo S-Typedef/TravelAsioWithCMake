@@ -1,1 +1,1 @@
-﻿int run_daytime_client(int argc, char* argv[]);
+﻿int run_sync_daytime_client(int argc, char* argv[]);

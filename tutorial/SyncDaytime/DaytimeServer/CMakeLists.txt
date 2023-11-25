@@ -1,6 +1,6 @@
 ﻿cmake_minimum_required(VERSION 3.15)
 
-project(DaytimeServer VERSION 1.0)
+project(SyncDaytimeServer VERSION 1.0)
 
 set(BOOST_ROOT /usr/local/boost)
 set(Boost_NO_SYSTEM_PATHS ON)

@@ -6,8 +6,11 @@
 #include "timer-4.h"
 #include "timer-5.h"
 
-#include "daytime-server.h"
-#include "daytime-client.h"
+#include "SyncDaytime/DaytimeServer/daytime-server.h"
+#include "SyncDaytime/DaytimeClient/daytime-client.h"
+
+#include "ASyncDaytime/DaytimeServer/daytime-server.h"
+#include "ASyncDaytime/DaytimeClient/daytime-client.h"
 
 
 int main(int argc, char* argv[])
@@ -29,9 +32,14 @@ int main(int argc, char* argv[])
 
 	//Daytime-1
 
+	// if (argc == 1)
+	// 	run_sync_daytime_server();
+	// else
+	// 	run_sync_daytime_client(argc, argv);
+
 	if (argc == 1)
-		run_daytime_server();
+		run_async_daytime_server();
 	else
-		run_daytime_client(argc, argv);
+		run_async_daytime_client(argc, argv);
 	return 0;
 }
