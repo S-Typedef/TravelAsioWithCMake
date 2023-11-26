@@ -24,6 +24,8 @@ list(APPEND EXTRA_LIBS
 	SyncUDPDaytimeServer
 )
 
+add_compile_definitions(USE_ASYNC)
+
 set(SRC_LIST tutorial.cc)
 
 add_executable(${PROJECT_NAME} ${SRC_LIST})

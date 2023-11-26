@@ -14,7 +14,10 @@ if (Boost_FOUND)
 
 endif()
 
-set(SRC_LIST udp-daytime-server.cc)
+set(SRC_LIST
+	udp-daytime-server.cc
+	udp-daytime-async-server.cc
+)
 
 add_library(${PROJECT_NAME} ${SRC_LIST})
 

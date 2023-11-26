@@ -44,7 +44,11 @@ int main(int argc, char* argv[])
 	// else
 	// 	run_async_daytime_client(argc, argv);
 	if (argc == 1)
+#ifdef USE_ASYNC
+		run_async_daytime_server_udp();
+#else
 		run_sync_daytime_server_udp();
+#endif
 	else
 		run_sync_daytime_client_udp(argc, argv);
 	return 0;
