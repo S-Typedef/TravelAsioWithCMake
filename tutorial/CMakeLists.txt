@@ -9,6 +9,7 @@ add_subdirectory(Timer4)
 add_subdirectory(Timer5)
 add_subdirectory(SyncDaytime)
 add_subdirectory(ASyncDaytime)
+add_subdirectory(SyncUDPDaytime)
 list(APPEND EXTRA_LIBS
 	Timer1
 	Timer2
@@ -19,6 +20,8 @@ list(APPEND EXTRA_LIBS
 	SyncDaytimeServer
 	ASyncDaytimeClient
 	ASyncDaytimeServer
+	SyncUDPDaytimeClient
+	SyncUDPDaytimeServer
 )
 
 set(SRC_LIST tutorial.cc)

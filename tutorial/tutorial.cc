@@ -12,6 +12,8 @@
 #include "ASyncDaytime/DaytimeServer/daytime-server.h"
 #include "ASyncDaytime/DaytimeClient/daytime-client.h"
 
+#include "SyncUDPDaytime/DaytimeServer/udp-daytime-server.h"
+#include "SyncUDPDaytime/DaytimeClient/udp-daytime-client.h"
 
 int main(int argc, char* argv[])
 {
@@ -37,9 +39,13 @@ int main(int argc, char* argv[])
 	// else
 	// 	run_sync_daytime_client(argc, argv);
 
+	// if (argc == 1)
+	// 	run_async_daytime_server();
+	// else
+	// 	run_async_daytime_client(argc, argv);
 	if (argc == 1)
-		run_async_daytime_server();
+		run_sync_daytime_server_udp();
 	else
-		run_async_daytime_client(argc, argv);
+		run_sync_daytime_client_udp(argc, argv);
 	return 0;
 }

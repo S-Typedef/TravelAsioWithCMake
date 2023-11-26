@@ -1,0 +1,1 @@
+﻿int run_sync_daytime_client_udp(int argc, char* argv[]);
